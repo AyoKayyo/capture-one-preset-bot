@@ -5,12 +5,10 @@
     "version": "1.0.0"
   },
   "servers": [
-   {
-    "url": "https://2451-174-55-135-163.ngrok-free.app"
-    "url": "https://capture-one-preset-bot.onrender.com"
-   }
- ],
-
+    {
+      "url": "https://capture-one-preset-bot.onrender.com"
+    }
+  ],
   "paths": {
     "/analyze": {
       "post": {
