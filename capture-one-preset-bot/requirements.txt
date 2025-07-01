@@ -1,4 +1,0 @@
-flask
-rawpy
-numpy
-opencv-python
