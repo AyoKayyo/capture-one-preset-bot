@@ -33,7 +33,10 @@
             "description": "JSON with slider settings",
             "content": {
               "application/json": {
-                "schema": { "type": "object" }
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
               }
             }
           }
@@ -64,7 +67,10 @@
             "description": "Return .costyle file",
             "content": {
               "application/octet-stream": {
-                "schema": { "type": "string", "format": "binary" }
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
               }
             }
           }
