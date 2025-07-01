@@ -1,17 +1,18 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.1.0",
   "info": {
     "title": "CaptureOnePresetBaker",
     "version": "1.0.0"
   },
   "servers": [
     {
-      "url": "https://076d-174-55-135-163.ngrok-free.app"
+      "url": "https://2451-174-55-135-163.ngrok-free.app"
     }
   ],
   "paths": {
     "/analyze": {
       "post": {
+        "operationId": "analyze",
         "summary": "Analyze image and return settings",
         "requestBody": {
           "required": true,
@@ -20,7 +21,10 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "file": { "type": "string", "format": "binary" }
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
                 },
                 "required": ["file"]
               }
@@ -32,7 +36,10 @@
             "description": "JSON with slider settings",
             "content": {
               "application/json": {
-                "schema": { "type": "object" }
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
               }
             }
           }
@@ -41,6 +48,7 @@
     },
     "/generate": {
       "post": {
+        "operationId": "generate",
         "summary": "Generate .costyle file from settings",
         "requestBody": {
           "required": true,
@@ -62,7 +70,10 @@
             "description": "Return .costyle file",
             "content": {
               "application/octet-stream": {
-                "schema": { "type": "string", "format": "binary" }
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
               }
             }
           }

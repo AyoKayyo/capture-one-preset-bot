@@ -4,13 +4,15 @@
   "name_for_model": "capture_one_preset",
   "description_for_human": "Generate a Capture One .costyle preset from an uploaded image",
   "description_for_model": "Use the /analyze endpoint to get slider settings from an image and then /generate to build a .costyle file",
-  "auth": { "type": "none" },
+  "auth": {
+    "type": "none"
+  },
   "api": {
     "type": "openapi",
-    "url": "https://aa88-174-55-135-163.ngrok-free.app/openapi.json",
+    "url": "https://2451-174-55-135-163.ngrok-free.app/openapi.json",
     "is_user_authenticated": false
   },
-  "logo_url": "https://raw.githubusercontent.com/your-user/your-repo/main/logo.png",
+  "logo_url": "https://raw.githubusercontent.com/AyoKayyo/capture-one-preset-bot/main/logo.png",
   "contact_email": "you@example.com",
   "legal_info_url": "http://example.com/legal"
 }
